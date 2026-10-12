@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Sex Bombing</title>
+<meta name="description" content="Answers about tickets, who can come, consent, camping, photos and how the road trip works at Sex Bombing, June 2027.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="FAQ — Sex Bombing">
+<meta property="og:description" content="Answers about tickets, who can come, consent, camping, photos and how the road trip works at Sex Bombing, June 2027.">
+<meta property="og:image" content="https://sexbombing.co.uk/images/lockup.png">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agetitle">
+  <div class="box">
+    <img src="/images/sb-mark.png" alt="SB">
+    <h2 id="agetitle">Adults only</h2>
+    <p>Sex Bombing is a sex-positive party for people aged 18 or over. Please confirm your age to continue.</p>
+    <div class="row">
+      <button class="btn" id="ageyes" type="button">I'm 18 or over</button>
+      <a class="ghost" href="https://www.google.com">Leave</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Sex Bombing home"><img src="/images/sb-mark.png" alt="SB"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/road-trip">Road trip</a>
+      <a href="/faq" aria-current="page">FAQ</a>
+    </nav>
+    <a class="btn small" href="#">Get tickets</a>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h1>Good questions</h1>
+  </div>
+</div>
+<section style="padding-top:16px">
+  <div class="wrap">
+<details><summary>When and where is it?</summary><p>June 2027, in Lincolnshire, close to the M18 corridor. The exact date, checkpoint and venue are shared with ticket holders only.</p></details>
+<details><summary>How do I get tickets?</summary><p>Tickets are sold through our partner SpicyMatch. Couples tickets and a limited number of singles tickets will be available. Prices will be announced before they go on sale.</p></details>
+<details><summary>Who can come?</summary><p>Anyone aged 18 or over. It's couples-led, with around 10% of places for singles of any gender, including trans and non-binary guests.</p></details>
+<details><summary>Do I have to join in the road trip?</summary><p>You do have to arrive at the checkpoint for 6pm, because the convoy is how we all arrive. The challenges and points are optional, but they're half the fun.</p></details>
+<details><summary>Do I have to do anything in the play rooms?</summary><p>No. They're optional, staffed, and consent-led. You can enjoy the DJ, the bar and the company and never go near them.</p></details>
+<details><summary>What is the consent policy?</summary><p>Ask first, accept no as a complete answer, and respect it immediately. Staff and marshals are on hand all night, and anyone who breaks the rules is removed without refund.</p></details>
+<details><summary>Can I take photos?</summary><p>Not inside the play rooms or anywhere that's marked no-phones. Never post or share photos of other guests without their clear permission.</p></details>
+<details><summary>Where do I sleep?</summary><p>Camp on site, bring a camper, or stay in a local hotel. We have a taxi partnership so nobody has to drink and drive.</p></details>
+<details><summary>What if I can't make it?</summary><p>Refund and transfer terms will be published when tickets go on sale.</p></details>
+<details><summary>Why the plain packaging?</summary><p>Your pack is posted in plain, unmarked packaging so nothing on the outside reveals what's inside.</p></details>
+  </div>
+</section>
+<section class="cta">
+  <div class="wrap">
+    <h2>Still curious?</h2>
+    <p>Tickets and updates come through our partner SpicyMatch.</p>
+    <a class="btn" href="#">Get tickets</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="row">
+      <span>Sex Bombing · June 2027 · Lincolnshire, UK</span>
+      <span>Tickets via <a href="#">SpicyMatch</a></span>
+    </div>
+    <p>Adults 18+ only. Consent is the rule of the night. Location is shared with ticket holders only.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var g=document.getElementById('agegate'),ok=false;
+  try{ok=localStorage.getItem('sb-18')==='1';}catch(e){}
+  if(!ok){g.classList.add('on');}
+  document.getElementById('ageyes').addEventListener('click',function(){
+    try{localStorage.setItem('sb-18','1');}catch(e){}
+    g.classList.remove('on');
+  });
+})();
+</script>
+</body>
+</html>

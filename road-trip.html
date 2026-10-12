@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The road trip — Sex Bombing</title>
+<meta name="description" content="How the Sex Bombing road trip works: points from the moment you book, a 6pm checkpoint, a marshalled convoy and the convoy rules.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="The road trip — Sex Bombing">
+<meta property="og:description" content="How the Sex Bombing road trip works: points from the moment you book, a 6pm checkpoint, a marshalled convoy and the convoy rules.">
+<meta property="og:image" content="https://sexbombing.co.uk/images/lockup.png">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agetitle">
+  <div class="box">
+    <img src="/images/sb-mark.png" alt="SB">
+    <h2 id="agetitle">Adults only</h2>
+    <p>Sex Bombing is a sex-positive party for people aged 18 or over. Please confirm your age to continue.</p>
+    <div class="row">
+      <button class="btn" id="ageyes" type="button">I'm 18 or over</button>
+      <a class="ghost" href="https://www.google.com">Leave</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Sex Bombing home"><img src="/images/sb-mark.png" alt="SB"></a>
+    <nav class="pages" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/road-trip" aria-current="page">Road trip</a>
+      <a href="/faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="#">Get tickets</a>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">The road trip</p>
+    <h1>Earn points from your front door</h1>
+    <p class="sub">Your points start the minute you book. Every challenge is optional, every challenge is photo-friendly, and none of them involve driving badly.</p>
+  </div>
+</div>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <h2>How points work</h2>
+    <ul class="list">
+      <li><b>Before you set off.</b> Stick the stickers on the car, share your pack on socials, and tag a friend who should be coming.</li>
+      <li><b>On the road.</b> Work through your road trip card: a landmark, a services stop, a roadside picnic, a wave to another Sex Bombing car.</li>
+      <li><b>Flash for points.</b> Spot another car with the flag? Flash your headlights, and each log a sighting.</li>
+      <li><b>At the checkpoint.</b> Best-dressed car, best flag, best group, furthest travelled.</li>
+      <li><b>Share it.</b> Post with the event hashtag and tag the official account. We pull posts together to score the leaderboard.</li>
+    </ul>
+    <p class="sub" style="margin-top:20px">Top of the leaderboard wins prizes on the night. Group captains who bring five or more guests get bonus points.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Convoy rules</p>
+    <h2>Fun, but safe</h2>
+    <ul class="list rules">
+      <li>Drivers never use a phone or take photos while driving. Passengers shoot, or you wait for a stop.</li>
+      <li>No racing, no stunts, no blocking junctions. Normal road rules apply at all times.</li>
+      <li>Follow the marshals at the checkpoint and stay with your assigned convoy group.</li>
+      <li>Drink at the venue, not before. Plan your way home: taxi, hotel, or camp on site.</li>
+      <li>Leave nothing behind at stops, and be considerate to everyone you pass.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to roll?</h2>
+    <p>Book your ticket and your points start straight away.</p>
+    <a class="btn" href="#">Get tickets</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="row">
+      <span>Sex Bombing · June 2027 · Lincolnshire, UK</span>
+      <span>Tickets via <a href="#">SpicyMatch</a></span>
+    </div>
+    <p>Adults 18+ only. Consent is the rule of the night. Location is shared with ticket holders only.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var g=document.getElementById('agegate'),ok=false;
+  try{ok=localStorage.getItem('sb-18')==='1';}catch(e){}
+  if(!ok){g.classList.add('on');}
+  document.getElementById('ageyes').addEventListener('click',function(){
+    try{localStorage.setItem('sb-18','1');}catch(e){}
+    g.classList.remove('on');
+  });
+})();
+</script>
+</body>
+</html>
